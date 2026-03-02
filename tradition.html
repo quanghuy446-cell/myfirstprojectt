@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .customs-section {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            color: #b88b8b;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+        }
+
+        /* Bố cục lưới nhẹ nhàng */
+        .customs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .custom-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #f2e7e7;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hiệu ứng hover rất nhẹ, không chớp nháy */
+        .custom-card:hover {
+            transform: translateY(-5px);
+            border-color: #e8d5d5;
+        }
+
+        .custom-card i {
+            font-size: 2rem;
+            color: #b88b8b;
+            display: block;
+            margin-bottom: 15px;
+            opacity: 0.8;
+        }
+
+        .custom-card h3 {
+            color: #b88b8b;
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .custom-card p {
+            color: #888888;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .dot-divider {
+            color: #e0e0e0;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="customs-section">
+        <h2 class="section-title">Nét Đẹp Phong Tục</h2>
+        <div class="dot-divider">···</div>
+
+        <div class="customs-grid">
+            <div class="custom-card">
+                <h3>Tiễn Táo Quân</h3>
+                <p>Ngày 23 tháng Chạp, các gia đình sửa soạn mâm cơm ấm cúng để tiễn ông Công, ông Táo về trời, gửi gắm ước nguyện cho một năm mới bình an.</p>
+            </div>
+
+            <div class="custom-card">
+                <h3>Phút Giây Giao Thừa</h3>
+                <p>Thời khắc thiêng liêng chuyển giao năm cũ và năm mới. Mọi người cùng dành cho nhau những lời chúc chân thành dưới ánh pháo hoa rạng rỡ.</p>
+            </div>
+
+            <div class="custom-card">
+                <h3>Tục Xông Đất</h3>
+                <p>Người đầu tiên bước chân vào nhà sau giao thừa được tin là người mang lại may mắn, tài lộc cho gia chủ suốt cả năm Bính Ngọ.</p>
+            </div>
+
+            <div class="custom-card">
+                <h3>Chúc Tết & Lì Xì</h3>
+                <p>Những phong bao đỏ thắm trao đi không chỉ là may mắn về vật chất mà còn là lời chúc sức khỏe, học giỏi và vạn sự như ý.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
